@@ -86,8 +86,6 @@ Organized marketplace for streetwear/sneaker bots. Serves as a middle-man betwee
    > Sign Up Screen
 * Sign up screen
    > Login Screen
-* Reset Password screen
-   > Login Screen 
 * Stream Screen (Home)
    > Detail
 * Detail Screen
@@ -165,15 +163,6 @@ Organized marketplace for streetwear/sneaker bots. Serves as a middle-man betwee
                 } else {
                     print("Error: \(error?.localizedDescription)")            }
             }
-        }
-        ```
-* Reset Password Screen
-   * (Read/`GET`) Have server send reset passwrod request to user's email
-        ```
-        @IBAction func onResetPass(_ sender: Any) {
-            let email = emailField.text!
-
-            PFUser.requestPasswordResetForEmailInBackground(email)
         }
         ```
 * Sign up Screen
